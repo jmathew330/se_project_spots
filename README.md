@@ -21,20 +21,11 @@ _Layout Details:_
 
 Flexbox is used for one-dimensional layouts, providing smooth alignment and distribution of space within rows or columns.
 CSS Grid handles complex, two-dimensional layouts, making it easy to design intricate page structures with minimal code.
-Technical Stack:
 
-_HTML5:_
+## Technologies Used
 
-Structuring the web pages with semantic elements for improved accessibility and SEO.
-
-_CSS3:_
-Styling with a focus on modern techniques like Flexbox and Grid for responsive design.
-
-## Techologies Used
-
-- HTML
-- CSS
-- Responsive Design (Flexbox, Grid)
+- HTML: Structuring the web pages with semantic elements for improved accessibility and SEO.
+- CSS: Styling with a focus on modern techniques like Flexbox and Grid for responsive design.
 
 ## Deployment
 
