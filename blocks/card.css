@@ -17,6 +17,11 @@
   margin: 0;
   font-weight: 500;
   font-size: 20px;
+  line-height: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 353px;
 }
 
 .card__like-btn {
@@ -35,8 +40,10 @@
     width: 288px;
     margin: 0 0 12px;
   }
+
   .card__title {
     font-size: 16px;
-    line-height: 1;
+    max-width: 250px;
+    line-height: normal;
   }
 }

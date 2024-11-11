@@ -91,6 +91,7 @@
 
   .profile__name {
     font-size: 20px;
+    line-height: 1;
     margin: 0 0 6px;
     max-width: 288px;
   }
@@ -98,6 +99,7 @@
   .profile__description {
     margin: 0 0 32px;
     max-width: 288px;
+    line-height: 1;
   }
 
   .profile__column {
