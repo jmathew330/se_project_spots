@@ -7,7 +7,9 @@
 .profile__avatar {
   height: 190px;
   width: 190px;
+  object-fit: cover;
   margin-right: 20px;
+  border-radius: 8px;
 }
 
 .profile__column {
@@ -52,10 +54,16 @@
   color: rgba(33, 33, 33, 0.7);
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
+  transition: color 0.5s;
 }
 
 .profile__edit-btn-image {
   opacity: 0.7;
+}
+
+.profile__edit-btn:hover {
+  color: #212121;
 }
 
 .profile__add-btn {
@@ -71,6 +79,14 @@
   justify-content: center;
   align-items: center;
   font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.profile__add-btn:hover {
+  background-color: #636e72;
+  border: none;
+  color: #fff;
 }
 
 @media screen and (max-width: 627px) {
