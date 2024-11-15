@@ -32,3 +32,9 @@ CSS Grid handles complex, two-dimensional layouts, making it easy to design intr
 This website is deployed to GitHub Pages
 
 - [Deployment URL](https://jmathew330.github.io/se_project_spots/)
+
+## Video
+
+- [Project Overview](https://drive.google.com/file/d/1DZzhVHwCz1tijgd3vtDaPI87UMlB8JyZ/view?usp=drive_link)
+
+- [Project Overview](https://jmathew330.github.io/se_project_spots/)
