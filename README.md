@@ -35,7 +35,7 @@ This website is deployed to GitHub Pages
 
 ## Videos
 
-- [Project Overview](https://drive.google.com/file/d/1DZzhVHwCz1tijgd3vtDaPI87UMlB8JyZ/view?usp=drive_link)
+- [Project Overview](https://drive.google.com/file/d/1NI9KzhOc4ZNw8UBbCGy_xYPmn_WddVpF/view?usp=sharing)
 
 - [Responsive Design Demo](https://drive.google.com/file/d/1GSrBbhbwruq-Qf5mi0jWXs_PLdxirSA-/view?usp=sharing)
   _(forgot to show in Project Overview)_
