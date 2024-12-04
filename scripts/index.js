@@ -48,6 +48,7 @@ function getCardElement(data) {
   const cardTitle = cardElement.querySelector(".card__title");
   const cardImg = cardElement.querySelector(".card__image");
   cardTitle.textContent = data.name;
+  cardImg.alt = data.name;
   cardImg.src = data.link;
 
   return cardElement;
@@ -56,11 +57,11 @@ function getCardElement(data) {
 function openModal() {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = descriptionName.textContent;
-  editModal.classList.add("modal__opened");
+  editModal.classList.add("modal_opened");
 }
 
 function closeModal() {
-  editModal.classList.remove("modal__opened");
+  editModal.classList.remove("modal_opened");
 }
 
 function handleEditFormSubmit(evt) {
