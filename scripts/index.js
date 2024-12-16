@@ -116,6 +116,6 @@ profileAddButton.addEventListener("click", () => {
 cardModalCloseButton.addEventListener("click", () => {
   closeModal(cardModal);
 });
-//event listeners for edit profile and add card on submission
+//event listeners for edit profile and add card forms on submission
 editForm.addEventListener("submit", handleEditFormSubmit);
 cardForm.addEventListener("submit", handleAddCardSubmit);
