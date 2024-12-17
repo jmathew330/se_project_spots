@@ -61,6 +61,7 @@
   position: absolute;
   top: 10px;
   left: 371px;
+  cursor: pointer;
 }
 
 .card__delete-btn:hover {
@@ -83,7 +84,7 @@
   .card__delete-btn {
     top: 10px;
     left: 246px;
-    width: 32px;
     height: 32px;
+    width: 32px;
   }
 }
