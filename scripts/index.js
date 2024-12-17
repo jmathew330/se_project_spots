@@ -101,8 +101,8 @@ function getCardElement(data) {
 
 // Function to delete a card
 function deleteCard(evt) {
-  const deletedCard = evt.target.closest(".card");
-  deletedCard.remove();
+  const cardToDelete = evt.target.closest(".card");
+  cardToDelete.remove();
 }
 
 // ----------------------------------
