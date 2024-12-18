@@ -27,6 +27,10 @@ const initialCards = [
     name: "Mountain house",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
   },
+  {
+    name: "Golden Gate bridge",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
+  },
 ];
 
 // Profile Section DOM Elements
@@ -54,6 +58,14 @@ const cardLinkInput = cardModal.querySelector("#add-card-link-input");
 // Cards Section DOM Elements
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
+
+//Preview Modal DOM Elements
+const previewModal = document.querySelector("#preview-modal");
+const previewModalImage = previewModal.querySelector(".modal__image");
+const previewModalCaption = previewModal.querySelector(".modal__caption");
+const previewModalCloseButton = previewModal.querySelector(
+  ".modal__close-btn_type_preview"
+);
 
 // ----------------------------------
 // Open & Close Modal Functions
@@ -95,6 +107,19 @@ function getCardElement(data) {
 
   // Delete button functionality
   cardDeleteBtn.addEventListener("click", deleteCard);
+
+  //Open preview modal
+  cardImg.addEventListener("click", () => {
+    openModal(previewModal);
+    previewModalImage.src = data.link;
+    previewModalImage.alt = data.name;
+    previewModalCaption.textContent = data.name;
+  });
+
+  //Close preview modal
+  previewModalCloseButton.addEventListener("click", () => {
+    closeModal(previewModal);
+  });
 
   return cardElement;
 }
