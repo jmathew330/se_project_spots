@@ -180,6 +180,43 @@ profileAddButton.addEventListener("click", () => {
   openModal(cardModal);
 });
 
+//Modal overlay event listener
+editModal.addEventListener("click", (evt) => {
+  if (evt.target === editModal) {
+    closeModal(editModal);
+  }
+});
+
+cardModal.addEventListener("click", (evt) => {
+  if (evt.target === cardModal) {
+    closeModal(cardModal);
+  }
+});
+
+previewModal.addEventListener("click", (evt) => {
+  if (evt.target === previewModal) {
+    closeModal(previewModal);
+  }
+});
+
+// New keydown event listener for closing modals
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
+    // Close edit modal if open
+    if (editModal.classList.contains("modal_opened")) {
+      closeModal(editModal);
+    }
+    // Close card modal if open
+    if (cardModal.classList.contains("modal_opened")) {
+      closeModal(cardModal);
+    }
+    // Close preview modal if open
+    if (previewModal.classList.contains("modal_opened")) {
+      closeModal(previewModal);
+    }
+  }
+});
+
 // Add card modal close button click event
 cardModalCloseButton.addEventListener("click", () => {
   closeModal(cardModal);
