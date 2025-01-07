@@ -135,9 +135,6 @@ popups.forEach((popup) => {
     if (evt.target.classList.contains("modal_opened")) {
       closeModal(popup);
     }
-    if (evt.target.classList.contains("modal__close-btn")) {
-      closeModal(popup);
-    }
   });
 });
 
@@ -179,7 +176,6 @@ profileEditButton.addEventListener("click", () => {
 
 profileAddButton.addEventListener("click", () => {
   openModal(cardModal);
-  resetValidation(cardForm, [cardNameInput, cardLinkInput], settings);
 });
 
 editForm.addEventListener("submit", handleEditFormSubmit);
