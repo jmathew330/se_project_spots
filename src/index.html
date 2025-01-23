@@ -9,20 +9,19 @@
     />
     <meta name="keywords" content="HTML, CSS" />
     <meta name="author" content="Jeffin Mathew" />
-    <link rel="stylesheet" href="pages/index.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Spots</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/logo.svg" alt="Spots logo" class="header__logo" />
+        <img id="header__logo" alt="Spots logo" class="header__logo" />
       </header>
       <main class="content">
         <section class="profile page__section">
           <img
-            src="./images/avatar.jpg"
             alt="Bessie Coleman"
+            id="profile__avatar"
             class="profile__avatar"
           />
           <div class="profile__column">
@@ -37,14 +36,14 @@
             </p>
             <button type="button" class="profile__edit-btn">
               <img
+                id="profile__edit-btn-icon"
                 class="profile__edit-btn-image"
-                src="./images/pencil.svg"
                 alt="Pencil icon"
               />Edit Profile
             </button>
           </div>
           <button type="button" class="profile__add-btn">
-            <img src="./images/plus.svg" alt="Plus icon" />New Post
+            <img id="profile__add-btn-icon" alt="Plus icon" />New Post
           </button>
         </section>
         <section class="cards page__section">
@@ -71,7 +70,7 @@
           <button type="button" class="modal__close-btn">
             <img
               class="modal__close-btn-icon"
-              src="./images/close.svg"
+              id="modal__close-btn-icon"
               alt="close button icon"
             />
           </button>
@@ -117,8 +116,8 @@
         <div class="modal__container">
           <button type="button" class="modal__close-btn">
             <img
+              id="modal__close-btn-icon-2"
               class="modal__close-btn-icon"
-              src="./images/close.svg"
               alt="close button icon"
             />
           </button>
@@ -166,7 +165,5 @@
         <p class="modal__caption"></p>
       </div>
     </div>
-    <script defer src="./scripts/index.js" type="text/javascript"></script>
-    <script defer src="./scripts/validation.js" type="text/javascript"></script>
   </body>
 </html>

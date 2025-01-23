@@ -1,7 +1,39 @@
+import "./index.css";
+import {
+  enableValidation,
+  resetValidation,
+  settings,
+} from "../scripts/validation.js";
+import logoIcon from "../images/logo.svg";
+import avatarImage from "../images/avatar.jpg";
+import editProfileIcon from "../images/pencil.svg";
+import newPostIcon from "../images/plus.svg";
+import editModalCloseIcon from "../images/close.svg";
+import newModalCloseIcon from "../images/close.svg";
+
+const logoElement = document.getElementById("header__logo");
+logoElement.src = logoIcon;
+
+const avatarElement = document.getElementById("profile__avatar");
+avatarElement.src = avatarImage;
+
+const editProfileButton = document.getElementById("profile__edit-btn-icon");
+editProfileButton.src = editProfileIcon;
+
+const newPostButton = document.getElementById("profile__add-btn-icon");
+newPostButton.src = newPostIcon;
+
+const editModalCloseButton = document.getElementById("modal__close-btn-icon");
+editModalCloseButton.src = editModalCloseIcon;
+
+const newPostModalCloseButton = document.getElementById(
+  "modal__close-btn-icon-2"
+);
+newPostModalCloseButton.src = newModalCloseIcon;
+
 // ----------------------------------
 // Data and Initial Setup
 // ----------------------------------
-
 const initialCards = [
   {
     name: "Val Thorens",
@@ -189,3 +221,5 @@ initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
   cardsList.prepend(cardElement);
 });
+
+enableValidation(settings);
