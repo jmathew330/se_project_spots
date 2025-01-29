@@ -1,5 +1,6 @@
 import "./index.css";
 import {
+  disableButton,
   enableValidation,
   resetValidation,
   settings,

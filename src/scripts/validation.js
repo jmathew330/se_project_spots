@@ -42,7 +42,7 @@ const toggleButtonState = (inputList, buttonEl, config) => {
   }
 };
 
-const disableButton = (buttonEl, config) => {
+export const disableButton = (buttonEl, config) => {
   buttonEl.disabled = true;
   buttonEl.classList.add(config.inactiveButtonClass);
 };
@@ -63,6 +63,12 @@ export const resetValidation = (formEl, inputList, config) => {
 const setEventListeners = (formEl, config) => {
   const inputList = Array.from(formEl.querySelectorAll(config.inputSelector));
   const buttonElement = formEl.querySelector(config.submitButtonSelector);
+
+  // Check if buttonElement exists
+  if (!buttonElement) {
+    console.error("Submit button not found in form:", formEl);
+    return; // Exit early if the button isn't found
+  }
 
   // Initialize button state based on inputs' validity
   toggleButtonState(inputList, buttonElement, config);
