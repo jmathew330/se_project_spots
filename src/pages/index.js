@@ -223,12 +223,12 @@ function handleEditFormSubmit(evt) {
     .then((data) => {
       profileName.textContent = data.name;
       descriptionName.textContent = data.about;
+      closeModal(editModal);
     })
     .catch(console.error)
     .finally(() => {
       setButtonText(submitButton, false);
     });
-  closeModal(editModal);
 }
 
 function handleAddCardSubmit(evt) {
@@ -260,12 +260,12 @@ function handleAvatarSubmit(evt) {
     })
     .then((data) => {
       avatarElement.src = data.avatar;
+      closeModal(avatarModal);
     })
     .catch(console.error)
     .finally(() => {
       setButtonText(submitButton, false);
     });
-  closeModal(avatarModal);
 }
 
 function handleDeleteSubmit(evt) {
